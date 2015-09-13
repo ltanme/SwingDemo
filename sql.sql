@@ -1,0 +1,15 @@
+CREATE DATABASE `db_book` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+CREATE TABLE `t_bookType` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `bookTypeName` varchar(45) DEFAULT NULL,
+  `bookTypeDesc` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `t_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `userName` varchar(45) DEFAULT NULL,
+  `password` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
