@@ -1,11 +1,11 @@
-package com.java1234.dao;
+package com.winfan.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-import com.java1234.model.BookType;
-import com.java1234.util.StringUtil;
+import com.winfan.model.BookType;
+import com.winfan.util.StringUtil;
 
 public class BookTypeDao {
 	

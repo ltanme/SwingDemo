@@ -1,4 +1,4 @@
-package com.java1234.view;
+package com.winfan.view;
 
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
@@ -26,10 +26,10 @@ import javax.swing.border.LineBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
 
-import com.java1234.dao.BookTypeDao;
-import com.java1234.model.BookType;
-import com.java1234.util.DbUtil;
-import com.java1234.util.StringUtil;
+import com.winfan.dao.BookTypeDao;
+import com.winfan.model.BookType;
+import com.winfan.util.DbUtil;
+import com.winfan.util.StringUtil;
 
 public class BookTypeManageInterFrm extends JInternalFrame {
 	private JTable bookTypeTable;

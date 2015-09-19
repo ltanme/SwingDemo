@@ -1,4 +1,4 @@
-package com.java1234.model;
+package com.winfan.model;
 
 /**
  * 图书类别实体
@@ -55,4 +55,8 @@ public class BookType {
 		this.bookTypeDesc = bookTypeDesc;
 	}
 
+	@Override
+	public String toString() {
+		return bookTypeName;
+	}
 }

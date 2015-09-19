@@ -1,4 +1,4 @@
-package com.java1234.view;
+package com.winfan.view;
 
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
@@ -9,6 +9,7 @@ import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -17,10 +18,10 @@ import javax.swing.JTextField;
 import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.border.LineBorder;
 
-import com.java1234.dao.BookTypeDao;
-import com.java1234.model.BookType;
-import com.java1234.util.DbUtil;
-import com.java1234.util.StringUtil;
+import com.winfan.dao.BookTypeDao;
+import com.winfan.model.BookType;
+import com.winfan.util.DbUtil;
+import com.winfan.util.StringUtil;
 
 public class BookTypeAddInterFrm extends JInternalFrame {
 	private JTextField bookTypeNameTxt;

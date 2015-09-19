@@ -13,3 +13,17 @@ CREATE TABLE `t_user` (
   `password` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `t_book` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `bookName` varchar(20) DEFAULT NULL,
+  `author` varchar(20) DEFAULT NULL,
+  `sex` varchar(10) DEFAULT NULL,
+  `price` float DEFAULT NULL,
+  `bookTypeId` int(11) DEFAULT NULL,
+  `bookDesc` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `bookTypeId` (`bookTypeId`),
+  CONSTRAINT `t_book_ibfk_1` FOREIGN KEY (`bookTypeId`) REFERENCES `t_booktype` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;

@@ -1,4 +1,4 @@
-package com.java1234.util;
+package com.winfan.util;
 
 public class StringUtil {
 	/**

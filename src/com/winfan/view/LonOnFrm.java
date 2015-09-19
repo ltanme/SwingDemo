@@ -1,4 +1,4 @@
-package com.java1234.view;
+package com.winfan.view;
 
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -20,10 +20,10 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
 
-import com.java1234.dao.UserDao;
-import com.java1234.model.User;
-import com.java1234.util.DbUtil;
-import com.java1234.util.StringUtil;
+import com.winfan.dao.UserDao;
+import com.winfan.model.User;
+import com.winfan.util.DbUtil;
+import com.winfan.util.StringUtil;
 
 
 public class LonOnFrm extends JFrame {

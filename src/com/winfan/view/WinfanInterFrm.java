@@ -1,4 +1,4 @@
-package com.java1234.view;
+package com.winfan.view;
 
 import java.awt.EventQueue;
 
@@ -8,8 +8,9 @@ import javax.swing.GroupLayout.Alignment;
 import java.awt.Color;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
+import java.awt.Font;
 
-public class Java1234InterFrm extends JInternalFrame {
+public class WinfanInterFrm extends JInternalFrame {
 
 	/**
 	 * Launch the application.
@@ -18,7 +19,7 @@ public class Java1234InterFrm extends JInternalFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Java1234InterFrm frame = new Java1234InterFrm();
+					WinfanInterFrm frame = new WinfanInterFrm();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -30,32 +31,32 @@ public class Java1234InterFrm extends JInternalFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Java1234InterFrm() {
-		getContentPane().setBackground(Color.RED);
+	public WinfanInterFrm() {
+		getContentPane().setBackground(Color.BLUE);
 		setIconifiable(true);
 		setClosable(true);
-		setTitle("关于java1234");
+		setTitle("关于winfan");
 		setBounds(100, 100, 450, 300);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(Java1234InterFrm.class.getResource("/images/java1234.png")));
+		JLabel lblHttpwinfannet = new JLabel("http://winfan.net");
+		lblHttpwinfannet.setForeground(Color.WHITE);
+		lblHttpwinfannet.setFont(new Font("Lucida Grande", Font.PLAIN, 23));
 		GroupLayout groupLayout = new GroupLayout(getContentPane());
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(105)
-					.addComponent(lblNewLabel)
-					.addContainerGap(111, Short.MAX_VALUE))
+					.addGap(70)
+					.addComponent(lblHttpwinfannet, GroupLayout.PREFERRED_SIZE, 289, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(67, Short.MAX_VALUE))
 		);
 		groupLayout.setVerticalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
 				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(74)
-					.addComponent(lblNewLabel)
-					.addContainerGap(106, Short.MAX_VALUE))
+					.addGap(69)
+					.addComponent(lblHttpwinfannet, GroupLayout.PREFERRED_SIZE, 112, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(73, Short.MAX_VALUE))
 		);
 		getContentPane().setLayout(groupLayout);
 
 	}
-
 }

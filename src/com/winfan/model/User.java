@@ -1,4 +1,4 @@
-package com.java1234.model;
+package com.winfan.model;
 
 public class User {
 	private int id;

@@ -1,4 +1,4 @@
-package com.java1234.view;
+package com.winfan.view;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -16,6 +16,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JDesktopPane;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JButton;
 
 public class MainFrm extends JFrame {
 
@@ -85,10 +86,25 @@ public class MainFrm extends JFrame {
 		menu.add(menu_3);
 		
 		JMenuItem menuItem_2 = new JMenuItem("图书添加");
+		menuItem_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				BookAddInterFrm bookAddInterFrm = new BookAddInterFrm();
+				bookAddInterFrm.setVisible(true);
+				table.add(bookAddInterFrm);
+			}
+		});
 		menuItem_2.setIcon(new ImageIcon(MainFrm.class.getResource("/images/add.png")));
 		menu_3.add(menuItem_2);
 		
 		JMenuItem menuItem_3 = new JMenuItem("图书维护");
+		menuItem_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+
+				BookManageInterFrm bookManageInterFrm = new BookManageInterFrm();
+				bookManageInterFrm.setVisible(true);
+				table.add(bookManageInterFrm);
+			}
+		});
 		menuItem_3.setIcon(new ImageIcon(MainFrm.class.getResource("/images/edit.png")));
 		menu_3.add(menuItem_3);
 		
@@ -110,12 +126,12 @@ public class MainFrm extends JFrame {
 		menu_1.setIcon(new ImageIcon(MainFrm.class.getResource("/images/about.png")));
 		menuBar.add(menu_1);
 		
-		JMenuItem mntmjava = new JMenuItem("关于java1234");
+		JMenuItem mntmjava = new JMenuItem("关于winfan.net");
 		mntmjava.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Java1234InterFrm java1234InterFrm = new Java1234InterFrm();
-				java1234InterFrm.setVisible(true);
-				table.add(java1234InterFrm);
+				WinfanInterFrm winfanInterFrm = new WinfanInterFrm();
+				winfanInterFrm.setVisible(true);
+				table.add(winfanInterFrm);
 			}
 		});
 		menu_1.add(mntmjava);

@@ -1,4 +1,4 @@
-package com.java1234.util;
+package com.winfan.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -7,7 +7,7 @@ import java.sql.DriverManager;
  * 数据库工具类
  */
 public class DbUtil {
-	 private String dbUrl="jdbc:mysql://localhost:3306/db_book";
+	 private String dbUrl="jdbc:mysql://localhost:3306/db_book?characterEncoding=UTF-8";
 	 private String dbUserName= "root";
 	 private String dbPassword="123456";
 	 private String jdbcName = "com.mysql.jdbc.Driver";
